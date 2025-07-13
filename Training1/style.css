@@ -1,0 +1,56 @@
+body {
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    background-color: beige;
+}
+
+.navbar-sticky-top {
+    background-color: black;
+    position: fixed;
+    top: 0%;
+    flex: auto;
+}
+
+.header-navigation {
+    text-align: right;
+    color: white;
+
+}
+
+header {
+    background-color: aquamarine;
+    top: 0%;
+}
+
+.header-text {
+    text-align: center;
+    color: white;
+}
+
+.header-primary {
+    align-items: center;
+    background-color: white;
+    flex: auto;
+    border-radius: 10px;
+    color: black;
+}
+
+.section-tours {
+    align-items: center;
+    background-color: white;
+}
+
+.header-text-secondary {
+    align-items: center;
+    color: green;
+}
+
+.service-details-cards {
+    display: flex;
+    float: left;
+    width: fit-content;
+}
+
+.card-1-of-4{
+    background-color: white;
+}
