@@ -1,25 +1,123 @@
 body {
+    font-family: Arial, Helvetica, sans-serif;
     background-color: black;
-    margin: 30px;
+    margin: auto;
+    width: 210mm;
+    height:fit-content;
+    box-sizing: border-box;
+    border: 2px solid white;
+    padding:20px
 }
 
+.first-section {
+    display: flex;
+    padding: 20px;
+}
 .candidate-avatar-box {
     border-radius: 20px;
     background-color: white;
     width: 200px;
     height: 200px;
-    display: flex;
 }
 
 .self-intro-box {
     border-radius: 20px;
-    background-color: gray;
+    background-color: rgb(34, 32, 32);
     color: white;
     width: 400px;
     height: 100px;
-    flex-wrap: wrap;
-    margin-right: 10px;
-    padding: 5px 5px;
-    display: flex;
+    margin: 0 20px 0 20px;
+    padding: 10px 10px 10px 10px;
+    font-style: italic;
     box-sizing: border-box;
+}
+
+.interests-box {
+    border-radius: 20px;
+    background-color: rgb(34, 32, 32);
+    color: white;
+    width: 500px;
+    display: flex;
+    margin: 0 20px 0 20px;
+    padding: 10px 10px 10px 10px;
+    box-sizing: border-box;
+}
+
+.secondary-title {
+    border-right: 2px solid gray;
+    padding-right: 10px;
+}
+
+.detail-box {
+    background-color:black;
+    color: gray;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    align-content: center;
+}
+
+.job-box {
+    display: flex;
+    padding: 20px;
+}
+
+.job-box-1, .job-box-2,.study-level-box {
+    border-radius: 20px;
+    background-color: rgb(34, 32, 32);
+    color: white;
+    font-size: medium;
+    width: 400px;
+    margin: 20px 0px 20px 20px;
+    padding: 20px 20px 10px 10px;
+    box-sizing: border-box;
+}
+
+.job-top {
+    display: flex;
+}
+
+.role {
+    color: gray;
+    font-size: small;
+    margin: 0 0 0 0;
+    flex-direction: column;
+}
+
+.company {
+    margin: 0 0 0 0;
+    flex-direction: column;
+}
+
+.time-box {
+    position: relative;
+}
+
+.middle-section {
+    display: flex;
+    padding: 20px;
+}
+
+.design-tools-box,.editing-tools-box,.languages {
+    border-radius: 20px;
+    background-color: rgb(34, 32, 32);
+    color: white;
+    font-size: medium;
+    margin: 20px 0px 20px 20px;
+    padding: 20px 20px 10px 10px;
+    box-sizing: border-box;
+}
+
+.bottom-section{
+    padding:20px
+}
+
+.porfolio-box,.personal-info-box {
+    border-radius: 20px;
+    background-color: rgb(34, 32, 32);
+    color: white;
+    margin: 20px 0px 20px 20px;
+    padding: 20px 20px 10px 10px;
+    box-sizing: border-box;
+    display: flex;
 }
