@@ -2,7 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
     margin: auto;
-    width: 210mm;
+    width: 250mm;
     height:fit-content;
     box-sizing: border-box;
     border: 2px solid white;
@@ -11,13 +11,14 @@ body {
 
 .first-section {
     display: flex;
-    padding: 20px;
+}
+
+.top-left {
+    margin: 20px 0px 20px 20px;
 }
 .candidate-avatar-box {
-    border-radius: 20px;
-    background-color: white;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
 }
 
 .candidate-avatar-box img{
@@ -43,8 +44,10 @@ body {
     color: white;
     display: flex;
     margin: 0 0px 0 20px;
-    padding: 10px 10px 10px 20px;
     box-sizing: border-box;
+    justify-content: space-evenly;
+    align-items: center;
+
 }
 
 .secondary-title {
@@ -63,10 +66,9 @@ body {
 
 .job-box {
     display: flex;
-    padding: 20px;
 }
 
-.job-box-1, .job-box-2,.study-level-box {
+.job-box-1, .job-box-2 {
     border-radius: 20px;
     background-color: rgb(34, 32, 32);
     color: white;
@@ -79,7 +81,7 @@ body {
 
 .job-top {
     display: flex;
-    padding: 20 20 0 0;
+    justify-content: space-between;
 }
 
 .role {
@@ -96,12 +98,19 @@ body {
 
 .time-box {
     display: flex;
-    margin: 0 0 0 20 ;
 }
 
 .middle-section {
     display: flex;
     padding: 20px;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.tools-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .design-tools-box,.editing-tools-box,.languages {
@@ -109,9 +118,9 @@ body {
     background-color: rgb(34, 32, 32);
     color: white;
     font-size: medium;
-    margin: 20px 0px 20px 20px;
     padding: 20px 20px 10px 10px;
     box-sizing: border-box;
+    display: flex;
 }
 
 .bottom-section{
@@ -122,8 +131,47 @@ body {
     border-radius: 20px;
     background-color: rgb(34, 32, 32);
     color: white;
-    margin: 20px 0px 20px 20px;
+    margin: 0px 0px 20px 0px;
     padding: 20px 20px 10px 10px;
     box-sizing: border-box;
     display: flex;
+}
+
+.box-icon {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.middle-title {
+    display: flex;
+}
+
+.study-level-box {
+    border-radius: 20px;
+    background-color: rgb(34, 32, 32);
+    color: white;
+    font-size: medium;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.high-school,.graduation,.diploma {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.basic-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.study-level-box hr {
+    border: none;
+    height: 1px;
+    background-color: gray;
+    margin: 10px 0;
+    width: 80%;
+    align-self: center;
 }
