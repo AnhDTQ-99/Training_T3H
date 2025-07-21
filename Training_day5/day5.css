@@ -1,0 +1,80 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(5, auto);
+}
+
+/*4 section. (feature + signup is 1 section) 
+use column reverse to put content to final
+display:none
+
+/*default layout: laptop*/
+.nav-bar{
+    background-color: #5b94db;
+    width: auto;
+    height: 100px;
+    grid-column: span 3;
+    height: 100px;
+}
+
+header{
+    background-color: #b4d7ff;
+    width: auto;
+    height: 300px;
+    grid-column: span 3;
+    grid-row-start: 2;
+}
+
+.feature {
+    height: 400px;
+    display: flex;
+    grid-column: span 3;
+    grid-row-start: 3;
+}
+
+.feature-left {
+    background-color: orange;
+    display: flex;
+    flex: 1;
+}
+
+.feature-mid {
+    background-color: purple;
+    display: flex;
+    flex: 1;
+}
+
+.feature-right {
+    background-color: red;
+    display: flex;
+    flex: 1;
+}
+
+.signup {
+    background-color: #d7e9ff;
+    grid-column: span 3;
+    height: 200px;
+}
+
+.content {
+    grid-column: span 3;
+    grid-row-start: 7;
+    background-color:#e9ecf1;
+    height: 400px;  
+}
+
+/*phone responsive*/
+@media (max-width:576px) {
+    body {
+        grid-template-areas: 
+            "nav nav nav"
+            "header header header"
+            "content content content"
+            "signup feature"
+            "feature feature";
+        grid-template-rows: auto auto auto auto auto auto auto;    
+        }
+}
