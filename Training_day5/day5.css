@@ -1,80 +1,96 @@
-body{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(5, auto);
-}
 
 /*4 section. (feature + signup is 1 section) 
 use column reverse to put content to final
 display:none
 
 /*default layout: laptop*/
-.nav-bar{
-    background-color: #5b94db;
-    width: auto;
-    height: 100px;
-    grid-column: span 3;
-    height: 100px;
-}
-
-header{
-    background-color: #b4d7ff;
-    width: auto;
-    height: 300px;
-    grid-column: span 3;
-    grid-row-start: 2;
-}
-
-.feature {
-    height: 400px;
-    display: flex;
-    grid-column: span 3;
-    grid-row-start: 3;
-}
-
-.feature-left {
-    background-color: orange;
-    display: flex;
-    flex: 1;
-}
-
-.feature-mid {
-    background-color: purple;
-    display: flex;
-    flex: 1;
-}
-
-.feature-right {
-    background-color: red;
-    display: flex;
-    flex: 1;
-}
-
-.signup {
-    background-color: #d7e9ff;
-    grid-column: span 3;
-    height: 200px;
-}
-
-.content {
-    grid-column: span 3;
-    grid-row-start: 7;
-    background-color:#e9ecf1;
-    height: 400px;  
-}
 
 /*phone responsive*/
 @media (max-width:576px) {
-    body {
-        grid-template-areas: 
-            "nav nav nav"
-            "header header header"
-            "content content content"
-            "signup feature"
-            "feature feature";
-        grid-template-rows: auto auto auto auto auto auto auto;    
+    .header, .content, .middle-box, .signup,.feature-left,.feature-mid,.feature-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         }
+}
+
+@media (min-width:576px) and (max-width:768px) {
+    .header, .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        }
+        
+    .upper-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .middle-box {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,auto);
+    }
+
+    .signup {
+        grid-column: 1 / 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feature-left {
+        grid-column: 2 / 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feature-mid {
+        grid-column: 1 / 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feature-right {
+        grid-column: 2 / 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    }
+
+@media (min-width:768px) {
+    .header,.content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bottom {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .middle-box {
+        display: flex;
+    }
+
+    .feature-left,.feature-mid,.feature-right,.signup {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
 }
