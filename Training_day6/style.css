@@ -1,0 +1,10 @@
+    .carousel-item {
+        min-height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+
+    .carousel-item .carousel-caption {
+        color:black;
+    }

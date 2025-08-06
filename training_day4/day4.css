@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.nav-bar {
+    top: 0%;
+    display: flex;
+    background-color: #5995db;
+    color: white;
+    justify-content: space-around;
+}
+
+.nav-bar-left {
+    display: flex;
+}
+.nav-bar-right {
+    display: flex;
+    gap: 15px;
+}
+
+.top-section {
+    background-color: #d7e9ff;
+    display:flex;
+    align-items: center;
+    height: 200px;
+    justify-content: space-evenly;
+}
+
+.top-section-left {
+    color:blue;
+    display:flex;
+    align-items: center;
+}
+
+.top-section-middle {
+    display:flex;
+}
+
+.social-media {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.item {
+    border-radius: 30px;
+    background-color: #5995db;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    flex-direction: column;
+}
+
+.content-top {
+    justify-content: center;
+    display: flex;
+}
+
+.box-1 {
+    display: flex;
+    background-color: #c9c5f8;
+    height: 200px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-2 {
+    display: flex;
+    background-color: #f0999f;
+    height: 200px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-3 {
+    display: flex;
+    background-color: #b3d6fc;
+    height: 200px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-bottom{
+    display: flex;
+    justify-content: center;
+}
+
+.box-4 {
+    display: flex;
+    background-color: #bfedfc;
+    height: 200px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.box-5 {
+    display: flex;
+    background-color: #f7cf91;
+    height: 200px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    background-color: #5995db;
+    width: auto;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-box {
+    background-color: #b3d6fc;
+    height: 200px;
+    width: 800px;
+}

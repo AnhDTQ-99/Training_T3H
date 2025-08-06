@@ -5,34 +5,45 @@ body {
 }
 
 .navbar-sticky-top {
-    background-color: black;
+    background-color: #0000006c; 
+    backdrop-filter: blur(10px); 
     position: fixed;
-    top: 0%;
-    flex: auto;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    justify-content: space-evenly;
+    display: flex;
 }
 
 .header-navigation {
     text-align: right;
     color: white;
-
+    display: flex;
 }
 
-header {
-    background-color: aquamarine;
+.navbar-page-list {
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+}
+
+.header {
+    height: 500px;
+    background-image:
+    linear-gradient(
+        rgba(0, 255, 187, 0.45)),
+        url(./image/hero-small.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     top: 0%;
 }
 
-.header-text {
+.header-title {
     text-align: center;
     color: white;
-}
-
-.header-primary {
-    align-items: center;
-    background-color: white;
-    flex: auto;
-    border-radius: 10px;
-    color: black;
+    display: flex;
 }
 
 .section-tours {
